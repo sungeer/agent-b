@@ -1,7 +1,6 @@
 import logging
 
 from src.agent import run_agent
-from src.actions import execute_action
 
 
 def main() -> None:
@@ -27,8 +26,6 @@ def main() -> None:
             print('\nBye！')
             break
 
-        ai_response = run_agent(user_input)
-
-        result = execute_action(ai_response)
+        result = run_agent(user_input)
 
         print(f'Agent: {result}')
