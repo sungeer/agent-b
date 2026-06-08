@@ -7,7 +7,12 @@ from src import toolset
 
 log = logging.getLogger(__name__)
 
-tools = [toolset.get_weather, toolset.web_search]
+tools = [
+    toolset.get_weather,
+    toolset.web_search,
+    toolset.get_current_time,
+    toolset.calculate,
+]
 tools_map = {t.name: t for t in tools}
 
 
